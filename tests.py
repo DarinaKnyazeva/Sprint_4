@@ -105,7 +105,7 @@ class TestBooksCollector:
         "Мастер и Маргарита",
         "Война и мир",
     ])
-    def test_add_to_favorites(self, collector, name):
+    def test_add_to_favorites_book(self, collector, name):
         collector.add_new_book(name)
         collector.add_book_in_favorites(name)
         assert name in collector.get_list_of_favorites_books()
